@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="expensestracker.MainPage"
+             BackgroundImageSource="backgroundex.jpeg"
+             >
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="10"
+            Spacing="10"
+            >
+
+            <Frame Background="Transparent" BorderColor="Transparent">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Frame BackgroundColor="Transparent" BorderColor="Transparent" Grid.Row="0" Grid.Column="0" Padding="5">
+                        <Grid RowSpacing="5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"></RowDefinition>
+                                <RowDefinition Height="auto"></RowDefinition>
+                                <RowDefinition Height="auto"></RowDefinition>
+                                <RowDefinition Height="auto"></RowDefinition>
+                                <RowDefinition Height="auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Label
+                                Text="EXPENSES TRACKER"
+                                FontAttributes="Bold"
+                                FontSize="35"
+                                TextColor="White"
+                                BackgroundColor="Black"
+                                HorizontalTextAlignment="Center"
+                                VerticalTextAlignment="Center"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2"
+                                Grid.Row="0"
+                                >
+
+                            </Label>
+
+                            <Image
+                                Source="exspenses.png"
+                                Aspect="AspectFit"
+                                HeightRequest="300"
+                                WidthRequest="600"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2"
+                                Grid.Row="1"
+                                >
+
+                            </Image>
+
+                            <Entry
+                                FontAttributes="Bold"
+                                FontSize="16"
+                                Grid.Row="2"
+                                BackgroundColor="White"
+                                TextColor="Black"
+                                Placeholder="Enter Income name"
+                                PlaceholderColor="Black"
+                                HorizontalTextAlignment="Center"
+                                VerticalTextAlignment="Center"
+                                x:Name="incomeNametxt"
+                                Keyboard="Text"
+                                >
+
+                            </Entry>
+
+                            <Entry
+                                FontAttributes="Bold"
+                                FontSize="18"
+                                Grid.Row="3"
+                                BackgroundColor="White"
+                                TextColor="Black"
+                                Placeholder="Enter income here"
+                                PlaceholderColor="Black"
+                                HorizontalTextAlignment="Center"
+                                VerticalTextAlignment="Center"
+                                x:Name="incomeTotaltxt"
+                                Keyboard="Numeric"
+                                >
+                            </Entry>
+
+                            <Button 
+                                Text="ADD"
+                                BackgroundColor="Black"
+                                TextColor="White"
+                                FontAttributes="Bold"
+                                FontSize="25"
+                                Grid.Row="2"
+                                Grid.Column="1"
+                                Grid.RowSpan="2"
+                                Clicked="ADDbtn"
+                                >
+
+                            </Button>
+                        </Grid>
+                    </Frame>
+
+                    <Frame BackgroundColor="Transparent" BorderColor="Transparent" Grid.Row="1" Grid.Column="0" Padding="5">
+                        <Grid RowSpacing="25" Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"></RowDefinition>
+                                <RowDefinition Height="auto"></RowDefinition>
+                                <RowDefinition Height="auto"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Button
+                            Text="ADD EXPENSES" 
+                            TextColor="White"
+                            BackgroundColor="Black"
+                            FontSize="30"
+                            FontAttributes="Bold"
+                            SemanticProperties.Hint="Counts the number of times you click"
+                            WidthRequest="250"
+                            HeightRequest="70"
+                            CornerRadius="25"
+                            Grid.Row="0"
+                            Grid.ColumnSpan="1"
+                            Clicked="ADDPAGE"
+                            />
+
+                            <Button
+                            Text="VIEW INCOME" 
+                            TextColor="White"
+                            BackgroundColor="Black"
+                            FontSize="30"
+                            FontAttributes="Bold"
+                            SemanticProperties.Hint="Counts the number of times you click"
+                            WidthRequest="250"
+                            HeightRequest="70"
+                            CornerRadius="25"
+                            Grid.Row="1"
+                            Grid.ColumnSpan="2"
+                            Clicked="VIEWPAGE"
+                            />
+
+                            <Button
+                            Text="ABOUT US"
+                            TextColor="White"
+                            BackgroundColor="Black"
+                            FontSize="30"
+                            FontAttributes="Bold"
+                            SemanticProperties.Hint="Counts the number of times you click"
+                            WidthRequest="250"
+                            HeightRequest="70"
+                            CornerRadius="25"
+                            Grid.Row="2"
+                            Clicked="ABOUTUS"
+                            />
+                        </Grid>
+                    </Frame>
+
+                </Grid>
+            </Frame>
+
+
+
+            
+
+
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
