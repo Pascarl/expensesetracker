@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="expensestracker.ABOUT_US_PAGE"
+             Title=""
+             BackgroundColor="Black">
+    
+    <VerticalStackLayout Background="Black" Spacing="15" Padding="10">
+        <Frame BackgroundColor="BlueViolet" BorderColor="BlueViolet" WidthRequest="400" CornerRadius="30">
+            
+        <Label 
+            Text="ABOUT US"
+            TextColor="LightSkyBlue"
+            FontSize="40"
+            FontAttributes="Bold"
+            VerticalTextAlignment="Center" 
+            HorizontalTextAlignment="Center" />
+            
+        </Frame>
+
+        <Frame BorderColor="Black" BackgroundColor="BlueViolet" WidthRequest="450" CornerRadius="30">
+            <Image
+                Source="logo.jpg"
+                HeightRequest="400"
+                Aspect="AspectFit"
+                BackgroundColor="Black"
+                >   
+
+            </Image>
+        </Frame>
+
+        <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label
+                Text="EMAIL:"
+                TextColor="LightSkyBlue"
+                FontSize="30"
+                HorizontalTextAlignment="Center"
+                Grid.Row="0"
+                Grid.Column="0"
+                >
+            </Label>
+            
+            <Label
+                Text="WhatsApp:"
+                TextColor="LightSkyBlue"
+                FontSize="30"
+                HorizontalTextAlignment="Center"
+                Grid.Row="1"
+                Grid.Column="0"
+                >
+                
+            </Label>
+
+            <Label
+                Text="FACEBOOK:"
+                TextColor="LightSkyBlue"
+                FontSize="30"
+                HorizontalTextAlignment="Center"
+                Grid.Row="2"
+                Grid.Column="0"
+                >
+                
+            </Label>
+
+            <Label
+                Text="INSTAGRAM:"
+                TextColor="LightSkyBlue"
+                FontSize="30"
+                HorizontalTextAlignment="Center"
+                Grid.Row="3"
+                Grid.Column="0"
+                >
+                
+            </Label>
+
+            <Label
+                Text="kpmpocketapp@gmail.com"
+                TextColor="BlueViolet"
+                FontSize="30"
+                HorizontalTextAlignment="Start"
+                Grid.Row="0"
+                Grid.Column="1"
+                >
+
+            </Label>
+            
+            <Label
+                Text="+27783254626"
+                TextColor="BlueViolet"
+                FontSize="30"
+                HorizontalTextAlignment="Start"
+                Grid.Row="1"
+                Grid.Column="2"
+                >
+
+            </Label>
+            
+            <Label
+                Text="https://www.facebook.com/kylepascarl.moonsamy"
+                TextColor="BlueViolet"
+                FontSize="30"
+                HorizontalTextAlignment="Start"
+                Grid.Row="2"
+                Grid.Column="2"
+                >
+
+            </Label>
+
+            <Label
+                Text="kpm_pocketapps"
+                TextColor="BlueViolet"
+                FontSize="30"
+                HorizontalTextAlignment="Start"
+                Grid.Row="3"
+                Grid.Column="2"
+                >
+
+            </Label>
+
+            
+        </Grid>
+        <Button
+            Text="BACK"
+            TextColor="LightSkyBlue"
+            WidthRequest="400"
+            HeightRequest="80"
+            CornerRadius="30"
+            FontSize="35"
+            FontAttributes="Bold"
+            Clicked="BACK"
+            >
+            
+        </Button>
+    </VerticalStackLayout>
+</ContentPage>

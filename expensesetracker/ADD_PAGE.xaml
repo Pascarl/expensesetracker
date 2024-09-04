@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Micro="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
+             x:Class="expensestracker.ADD_PAGE"
+             Title="ADD_PAGE"
+             xmlns:vm="clr-namespace:expensestracker"
+             x:DataType="vm:ADD_PAGE">
+    
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="Black" Padding="10" Spacing="10">
+
+            <Frame 
+                BackgroundColor="BlueViolet"
+                BorderColor="BlueViolet"
+                WidthRequest="350"
+                HeightRequest="80"
+                CornerRadius="25"
+                >
+                
+                <Label 
+                Text="ADD EXPENSES"
+                TextColor="White"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                FontSize="30"
+                FontAttributes="Bold"
+                >
+                    
+                </Label>
+                
+            </Frame>
+
+
+            <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Frame
+                BackgroundColor="BlueViolet"
+                BorderColor="BlueViolet"
+                WidthRequest="250"
+                CornerRadius="25"
+                Grid.Column="0"
+                Grid.Row="0"
+                    >
+                    
+                    <Label
+                        Text="EXPENSES"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        TextColor="Red"
+                        VerticalTextAlignment="Center"
+                        HorizontalTextAlignment="Center"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        x:Name="EX"
+                        >
+                    </Label>
+                </Frame>
+
+                <Frame
+                BackgroundColor="BlueViolet"
+                BorderColor="BlueViolet"
+                WidthRequest="250"
+                CornerRadius="25"
+                Grid.Column="1"
+                Grid.Row="0"
+                 >
+                    <Label
+                Text="COST"
+                FontSize="20"
+                FontAttributes="Bold"
+                TextColor="Orange"
+                    
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                Grid.Row="0"
+                Grid.Column="1"
+                >
+                    </Label>
+
+                </Frame>
+
+                <Frame
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    BackgroundColor="BlueViolet"
+                    BorderColor="BlueViolet"
+                    >
+                    <Label
+                        x:Name="exen"
+                        FontSize="20"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        TextColor="red"
+                        BackgroundColor="Black"
+                        >
+                        
+                    </Label>
+                </Frame>
+
+                <Frame
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    BackgroundColor="BlueViolet"
+                    BorderColor="BlueViolet"
+                    >
+                    <Label
+                        x:Name="cstlist"
+                        FontSize="20"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        TextColor="Orange"
+                        BackgroundColor="Black"
+                        >
+                        
+                    </Label>
+                    
+                </Frame>
+
+
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="2"
+                        Text="Income"
+                        TextColor="White"
+                        FontSize="30"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center"
+                        
+                        >
+                        
+                    </Label>
+                    
+                
+               
+                    <Label
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        Text="Total after expenses"
+                        TextColor="GreenYellow"
+                        FontSize="25"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center"
+        
+                        >
+
+                    </Label>
+
+                
+               
+                    <Entry
+                        Grid.Column="0"
+                        Grid.Row="3"
+                        Placeholder="Enter Income here!"
+                        Background="Black"
+                        TextColor="White"
+                        FontSize="15"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        x:Name="totalincome"
+                        >
+                        
+                    </Entry>
+
+                
+               
+                    <Label
+                        Grid.Column="1"
+                        Grid.Row="3"
+                        TextColor="GreenYellow"
+                        FontSize="30"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center"
+                        x:Name="totalafter"
+        >
+
+                    </Label>
+
+                <Frame 
+                    BackgroundColor="BlueViolet" 
+                    BorderColor="BlueViolet" 
+                    Grid.ColumnSpan="2" 
+                    Grid.Row="4"
+                    WidthRequest="225"
+                    HeightRequest="100"
+                    CornerRadius="30"
+                    >
+
+                     <DatePicker
+                        TextColor="White"
+                        Background="blue"
+                        FontSize="30"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        >
+
+                       </DatePicker>   
+
+                </Frame>
+
+            </Grid>
+
+            <Grid RowSpacing="10" ColumnSpacing="10" Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Entry 
+                    FontSize="15"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"
+                    Placeholder="Enter expenses here!"
+                    PlaceholderColor="Black"
+                    TextColor="Black"
+                    BackgroundColor="White"
+                    Grid.ColumnSpan="1"
+                    Grid.Row="0"
+                    x:Name="Exentry"
+                    >
+
+                </Entry>
+
+                <Entry 
+                    FontSize="15"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"
+                    Placeholder="Enter cost here!"
+                    PlaceholderColor="Black"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    Grid.ColumnSpan="1"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    x:Name="costen"
+                    >
+                </Entry>
+
+                <Button
+                    Text="ADD"
+                    FontSize="25"
+                    FontAttributes="Bold"
+                    CornerRadius="25"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Clicked="ADD">
+
+                </Button>
+
+                <Button
+                    Text="CANCEL"
+                    FontSize="25"
+                    FontAttributes="Bold"
+                    CornerRadius="25"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Clicked="cancel">
+
+                </Button>
+
+
+                <Button
+                    Text="save"
+                    FontSize="25"
+                    CornerRadius="25"
+                    FontAttributes="Bold"
+                    Grid.Row="2"
+                    Grid.ColumnSpan="2"
+                    Clicked="save"
+                    >
+
+                </Button>
+
+                <Button
+                    Text="BACK"
+                    FontSize="25"
+                    CornerRadius="25"
+                    FontAttributes="Bold"
+                    Grid.Row="3"
+                    Grid.ColumnSpan="2"
+                    Clicked="BACK"
+                    >
+
+                </Button>
+
+            </Grid>
+
+            <Micro:ChartView 
+                x:Name="Chartview1"
+                HeightRequest="400"
+                >
+                
+            </Micro:ChartView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
